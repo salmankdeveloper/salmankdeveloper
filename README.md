@@ -45,10 +45,20 @@ React, Next.js and Remix on the front end; Node.js/Express and Python (Django, F
 <img src="https://img.shields.io/badge/RAG-1D4ED8?style=flat-square" alt="Retrieval augmented generation" height="20" /> <img src="https://img.shields.io/badge/Vector%20search-3B82F6?style=flat-square" alt="Vector search" height="20" /> <img src="https://img.shields.io/badge/Ollama-1E293B?style=flat-square&logo=ollama&logoColor=white" alt="Ollama" height="20" /> <img src="https://img.shields.io/badge/Claude-D4A27F?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic Claude" height="20" /> <img src="https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white" alt="n8n" height="20" /> <img src="https://img.shields.io/badge/Zapier-FF4F00?style=flat-square&logo=zapier&logoColor=white" alt="Zapier" height="20" />
 
 - **Retrieval (RAG)** — chunking strategy, embeddings, hybrid search, grounded answers with citations, and evaluation loops that catch regressions
-- **Training & fine-tuning** — dataset curation, training runs, and honest evaluation; my handwritten-digit CNN reaches 99.57% on 2,099 held-out images
+- **Training & fine-tuning** — dataset curation, training runs, evaluation harnesses, and catching regressions before a model ships
 - **Agents & tooling** — LangGraph and LangChain orchestration, function calling, and stateful multi-step workflows that survive failure
 - **Automation** — event-driven pipelines, scheduled jobs, and n8n / Zapier glue for the operational half of a deployment
 - **Serving** — FastAPI inference services, containerised with Docker, shipped through CI/CD
+
+### Delivery & Infrastructure
+
+<img src="https://skillicons.dev/icons?i=githubactions,docker,nginx,linux,ubuntu,bash,vercel,cloudflare,netlify,git&theme=dark&perline=10" alt="GitHub Actions, Docker, Nginx, Linux, Ubuntu, Bash, Vercel, Cloudflare, Netlify, Git" height="48" />
+
+- **CI/CD** — GitHub Actions pipelines that lint, test and build on every pull request, then ship on merge to main
+- **Local** — Docker Compose for app plus database, seeded fixtures, and one command to bring the whole stack up
+- **Servers** — Linux VPS provisioning, Nginx reverse proxy, TLS, systemd services, and zero-downtime restarts
+- **Cloud** — deploys to Vercel, Cloudflare and Netlify, with managed Postgres and proper environment/secret handling
+- **Operations** — structured logging, uptime checks, backups, and migrations that can be rolled back
 
 ### Contribution Graph
 
