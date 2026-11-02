@@ -45,7 +45,7 @@ React, Next.js and Remix on the front end; Node.js/Express and Python (Django, F
 <img src="https://img.shields.io/badge/RAG-1D4ED8?style=flat-square" alt="Retrieval augmented generation" height="20" /> <img src="https://img.shields.io/badge/Vector%20search-3B82F6?style=flat-square" alt="Vector search" height="20" /> <img src="https://img.shields.io/badge/Ollama-1E293B?style=flat-square&logo=ollama&logoColor=white" alt="Ollama" height="20" /> <img src="https://img.shields.io/badge/Claude-D4A27F?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic Claude" height="20" /> <img src="https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white" alt="n8n" height="20" /> <img src="https://img.shields.io/badge/Zapier-FF4F00?style=flat-square&logo=zapier&logoColor=white" alt="Zapier" height="20" />
 
 - **Retrieval (RAG)** — chunking strategy, embeddings, hybrid search, grounded answers with citations, and evaluation loops that catch regressions
-- **Training & fine-tuning** — dataset curation, training runs, evaluation harnesses, and catching regressions before a model ships
+- **Training & fine-tuning** — dataset curation, reproducible training runs, and evaluation harnesses that stop a fine-tune from silently getting worse
 - **Agents & tooling** — LangGraph and LangChain orchestration, function calling, and stateful multi-step workflows that survive failure
 - **Automation** — event-driven pipelines, scheduled jobs, and n8n / Zapier glue for the operational half of a deployment
 - **Serving** — FastAPI inference services, containerised with Docker, shipped through CI/CD
